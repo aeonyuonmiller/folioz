@@ -17,8 +17,9 @@ export default function Home() {
     <motion.div className='glas' initial={{y: "10vh", opacity: 0}} animate={{y: "0vh", opacity: 1}} transition={{duration: .4, ease: [.3,0,.2,1.01], delay: 1 }}>
       <h5>View works</h5>
       <div className="card-grid">
-        <Card title="Ok" description="whatever" />
-        <Card title="Whatever" description="ok" />
+        <Card title="Ok" date="xx.xx.xxxx" />
+        <Card title="my minimalist mac set-up" date="xx.xx.xxxx" />
+        <Card title="my top-5 book-reads" date="15.06.2023" />
       </div>
     </motion.div>
 

@@ -143,8 +143,9 @@ a {
 
 .card-grid{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 50%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2em;
+  width: 900px;
   margin-top: 6em;
 }
 
@@ -157,11 +158,18 @@ a {
 
   border-radius: var(--border-radius);
   padding: 2rem;
-  margin: 2rem;
   margin-top: 0;
-  width: 200px;
   height: 200px;
-  max-width: 600px;
+  width: 100%;
+
+  box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0),
+  100px 100px 80px rgba(0, 0, 0, 0)
+;
 }
 
 .card .content{
@@ -170,13 +178,34 @@ a {
   text-align: left;
 }
 
+.card h2{
+  max-width: 21ch;
+}
+
+.card p{
+  font-weight: 500;
+  opacity: .5;
+  margin-bottom: 10px;
+}
+
 /* Arrow-Icon */
 .card span{
   position: absolute;
   width: 10px;
   bottom: 3.2em;
   right: 3.5em;
-  transition: transform ease .4s;
+  transition: transform ease .4s, box-shadow ease .8s;
+}
+
+.card:hover{
+  box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.006),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.008),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.01),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.012),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.014),
+  100px 100px 80px rgba(0, 0, 0, 0.02)
+;
 }
 
 .card:hover span{
