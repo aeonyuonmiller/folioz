@@ -12,7 +12,6 @@ export default function Home() {
     
     <motion.div className='title' initial={{y: 50, opacity:0}} animate={{y: 0, opacity:1}} transition={{duration: .4, ease: [.3,0,.2,1.01], delay: .1}}>Portfolio <span>of</span> Aeon Yuon Miller</motion.div>
 
-    <motion.div className='date' initial={{y: 50, opacity:0}} animate={{y: 0, opacity:1}} transition={{duration: .4, ease: [.3,0,.2,1.01], delay: .4}}>&copy;{new Date().getFullYear()}</motion.div>
 
     <motion.div className='glas' initial={{y: "10vh", opacity: 0}} animate={{y: "0vh", opacity: 1}} transition={{duration: .4, ease: [.3,0,.2,1.01], delay: 1 }}>
       <h5>View works</h5>
@@ -23,6 +22,8 @@ export default function Home() {
       </div>
     </motion.div>
 
+    <motion.div className='date' initial={{y: 50, opacity:0}} animate={{y: 0, opacity:1}} transition={{duration: .4, ease: [.3,0,.2,1.01], delay: .4}}>&copy;{new Date().getFullYear()}</motion.div>
+    
     <div className="logo">
         <Logo color="#C4C4C4" />
         {/* <Image
