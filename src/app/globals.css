@@ -105,7 +105,7 @@ a {
 
 .date{
   position: fixed;
-  right: 80px;
+  right: 50px;
   bottom: 50px;
 
   color: #eeeeee;
@@ -224,7 +224,7 @@ a {
   bottom:0;
   right: 0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-image: url(../../public/selfportrait.png);
   background-repeat: no-repeat;
   /* background-position: top right; */
