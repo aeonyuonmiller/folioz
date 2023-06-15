@@ -19,11 +19,13 @@ export default function Home() {
         <Card title="Mind your cookies" date="xx.xx.xxxx" />
         <Card title="my minimalist mac set-up" date="xx.xx.xxxx" />
         <Card title="My 5 fav books" date="15.06.2023" />
+        <Card title="My 5 fav books" date="15.06.2023" />
+        <Card title="My 5 fav books" date="15.06.2023" />
       </div>
     </motion.div>
 
     <motion.div className='date' initial={{y: 50, opacity:0}} animate={{y: 0, opacity:1}} transition={{duration: .4, ease: [.3,0,.2,1.01], delay: .4}}>&copy;{new Date().getFullYear()}</motion.div>
-    
+
     <div className="logo">
         <Logo color="#C4C4C4" />
         {/* <Image
