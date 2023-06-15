@@ -107,7 +107,6 @@ a {
   position: fixed;
   right: 50px;
   bottom: 50px;
-
   color: #eeeeee;
   font-size: 8px;
   font-weight: 500;
@@ -154,6 +153,10 @@ a {
 
 .card:first-child{
   grid-row: span 2;
+}
+
+.card:nth-child(4){
+  grid-column: span 2;
 }
 
 .card{
