@@ -179,13 +179,14 @@ a {
 }
 
 .card h2{
-  max-width: 21ch;
+  max-width: 19ch;
+  letter-spacing: 0.02em;
 }
 
 .card p{
   font-weight: 500;
   opacity: .5;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 /* Arrow-Icon */
