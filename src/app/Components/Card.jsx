@@ -8,8 +8,8 @@ const Card = ({title, date}) => {
       whileInView={{ opacity:1, scale:1 }} 
       exit={{ opacity:0, scale:0 }} 
       viewport={{  margin: "20%", once: false }} 
-      transition={{ type: "spring", stiffness: 900, damping: 10, staggerChildren: 0.1 }}
-      whileHover={{ scale: 1.025 }}
+      transition={{ type: "spring", stiffness: 400, damping: 10, staggerChildren: 0.1 }}
+      whileHover={{ scale: 1.015, y: -2 }}
     >
       <div className="content">
         <p>{date}</p>

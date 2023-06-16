@@ -162,7 +162,7 @@ a {
   justify-content: start;
   align-items: end;
   border-radius: var(--border-radius);
-  padding: 2rem;
+  padding: 2rem 2.1rem;
   height: 100%;
   min-height: 200px;
   width: 100%;
@@ -188,6 +188,7 @@ a {
 }
 
 .card p{
+  font-size: x-small !important;
   font-weight: 500;
   opacity: .5;
   margin-bottom: 6px;
