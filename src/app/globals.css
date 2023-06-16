@@ -169,6 +169,10 @@ a {
   grid-column: span 2;
 }
 
+.card:nth-of-type(4n) h2{
+  max-width: 60ch;
+}
+
 .card{
   position: relative;
   background: rgba(142, 142, 142, 0.3);
