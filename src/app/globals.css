@@ -104,9 +104,9 @@ a {
 
 .date{
   position: fixed;
-  right: 50px;
-  bottom: 50px;
-  color: #eeeeee;
+  right: 40px;
+  bottom: 20dvh;
+  color: #acacac;
   font-size: 8px;
   font-weight: 500;
   text-transform: uppercase;

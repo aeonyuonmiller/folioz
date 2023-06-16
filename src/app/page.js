@@ -25,6 +25,15 @@ export default function Home() {
       </motion.div>
 
       <motion.div
+        className="date"
+        initial={{ y: 50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.4, ease: [0.3, 0, 0.2, 1.01], delay: 0.4 }}
+      >
+        &copy;{new Date().getFullYear()}
+      </motion.div>
+
+      <motion.div
         className="glas"
         initial={{ y: "10vh", opacity: 0 }}
         animate={{ y: "0vh", opacity: 1 }}
@@ -43,15 +52,6 @@ export default function Home() {
           <Card title="My 5 fav books" date="15th July '233" />
           <Card title="Best albums" date="15th July '23" />
         </div>
-      </motion.div>
-
-      <motion.div
-        className="date"
-        initial={{ y: 50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.4, ease: [0.3, 0, 0.2, 1.01], delay: 0.4 }}
-      >
-        &copy;{new Date().getFullYear()}
       </motion.div>
 
       <div className="logo">
