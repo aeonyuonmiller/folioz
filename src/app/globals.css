@@ -150,6 +150,30 @@ a {
   max-width: 1000px;
   width: 100%;
 }
+@media screen and (max-width:1300px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    margin-top: 6em;
+    margin-bottom: 22em;
+    max-width: 800px;
+    width: 100%;
+  }
+}
+@media screen and (max-width:800px) {
+  .glas{
+    padding: 6em 120px;
+  }
+  .card h2{ font-size: 12px; }
+  .card-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    margin-top: 6em;
+    margin-bottom: 22em;
+    width: 100%;
+  }
+}
 
 .card:first-child{
   grid-row: span 2;
@@ -175,8 +199,6 @@ a {
 .card:hover{
   background: whitesmoke;
 }
-
-@media screen and (max-width:950px) { }
 
 .card .content{
   flex-direction: column;
