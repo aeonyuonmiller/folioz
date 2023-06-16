@@ -147,7 +147,8 @@ a {
   gap: 3em;
   margin-top: 6em;
   margin-bottom: 22em;
-  width: 60%;
+  max-width: 1000px;
+  width: 100%;
 }
 
 .card:first-child{
