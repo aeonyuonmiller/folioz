@@ -25,7 +25,7 @@ export default function Home() {
       </motion.div>
 
       <motion.div
-        className="date"
+        className="copyright"
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.4, ease: [0.3, 0, 0.2, 1.01], delay: 0.4 }}
