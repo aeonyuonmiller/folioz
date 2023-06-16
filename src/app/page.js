@@ -45,7 +45,6 @@ export default function Home() {
           <Card title="my minimalist mac set-up" date="15th July '23" />
           <Card title="5 fav books" date="15th July '23" />
           <Card title="Best albums" date="15th July '23" />
-
           <Card title="my minimalist mac set-up" date="15th July '23" />
           <Card title="Mind your cookies" date="15th July '23" />
           <Card title="my minimalist mac set-up" date="15th July '23" />
