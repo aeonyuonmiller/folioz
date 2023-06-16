@@ -69,7 +69,6 @@ body {
 }
 body {
   background: #f1f1f1;
-  /* background: var(--secondary-glow); */
 }
 
 a {
@@ -141,12 +140,9 @@ a {
 }
 
 .card-grid{
-  /* position: absolute; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2em;
-  /* width: calc(100% - 500px);
-  left: 20%; */
   margin-top: 6em;
   margin-bottom: 6em;
 }
@@ -155,7 +151,7 @@ a {
   grid-row: span 2;
 }
 
-.card:nth-child(4){
+.card:nth-of-type(4n){
   grid-column: span 2;
 }
 
@@ -169,6 +165,7 @@ a {
   border-radius: var(--border-radius);
   padding: 2rem;
   height: 100%;
+  min-height: 200px;
   width: 100%;
 
   box-shadow:
@@ -180,6 +177,8 @@ a {
   100px 100px 80px rgba(0, 0, 0, 0)
 ;
 }
+
+@media screen and (max-width:950px) { }
 
 .card .content{
   flex-direction: column;
