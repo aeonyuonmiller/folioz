@@ -1,17 +1,16 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import "./globals.css";
+import { Inter } from "next/font/google";
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'Aeon Yuon Miller',
-  description: 'Portfolio of Aeon Yuon Miller',
-}
+  title: "Aeon Yuon Miller",
+  description: "Portfolio of Aeon Yuon Miller",
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
     </html>
-  )
+  );
 }

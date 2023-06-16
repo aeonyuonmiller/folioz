@@ -4,10 +4,6 @@
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
-
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -211,8 +207,16 @@ a {
   margin-bottom: 6px;
 }
 
+.card span.accent{
+  position: relative;
+  text-transform: lowercase;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  bottom: 4px;
+}
+
 /* Arrow-Icon */
-.card span{
+.card span.arrow{
   position: absolute;
   width: 10px;
   bottom: 3.2em;
@@ -220,7 +224,7 @@ a {
   mix-blend-mode: difference;
   transition: transform ease .2s;
 }
-.card:hover span{
+.card:hover span.arrow{
   transform: translate(5px, 5px);
 }
 
