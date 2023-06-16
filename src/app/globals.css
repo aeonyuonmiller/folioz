@@ -115,7 +115,7 @@ a {
 
 .glas{
   position: absolute;
-  top: 85vh;
+  top: 85dvh;
   left: 0;
   backdrop-filter: blur(20px);
   background-color: hsla(0, 0%, 60%, 0.12);
@@ -161,8 +161,9 @@ a {
   }
 }
 @media screen and (max-width:800px) {
+  .portrait{ display:none; }
   .glas{
-    padding: 6em 120px;
+    padding: 6em 40px;
   }
   .card h2{ font-size: 12px; }
   .card-grid {
