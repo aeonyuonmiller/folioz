@@ -160,21 +160,6 @@ a {
     width: 100%;
   }
 }
-@media screen and (max-width:800px) {
-  .portrait{ display:none; }
-  .glas{
-    padding: 6em 40px;
-  }
-  .card h2{ font-size: 12px; }
-  .card-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 4em;
-    margin-top: 6em;
-    margin-bottom: 22em;
-    width: 100%;
-  }
-}
 
 .card:first-child{
   grid-row: span 2;
@@ -260,5 +245,45 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .logo {
+    top: 100px;
+    left: calc(50% - 30px);
+  }
+
+  .title {
+    width: 300px;
+    left: calc(50% - 150px);
+    top: calc(50dvh - 28px);
+    text-align: center;
+  }
+
+  .portrait {
+    display: none;
+  }
+
+  .glas {
+    padding: 6em 40px;
+  }
+
+  .card {
+    min-height: 50vh;
+  }
+
+  .card h2 {
+    font-size: 22px;
+    line-height: 120%;
+  }
+
+  .card-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    margin-top: 6em;
+    margin-bottom: 22em;
+    width: 100%;
   }
 }
