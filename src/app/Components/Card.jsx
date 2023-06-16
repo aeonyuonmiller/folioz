@@ -16,7 +16,7 @@ const Card = ({title, date}) => {
         <h2>{title}</h2>
       </div>
       <span>
-        <Arrow color="#ccc" />
+        <Arrow color="#d7d6d6" />
       </span>
     </motion.div>
   )
