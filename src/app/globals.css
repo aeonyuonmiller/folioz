@@ -203,6 +203,7 @@ a {
   width: 10px;
   bottom: 3.2em;
   right: 3.5em;
+  mix-blend-mode: difference;
   transition: transform ease .2s;
 }
 .card:hover span{
