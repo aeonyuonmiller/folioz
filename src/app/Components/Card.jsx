@@ -8,7 +8,7 @@ const Card = ({title, date}) => {
       whileInView={{ opacity:1, scale:1 }} 
       exit={{ opacity:0, scale:0 }} 
       viewport={{  margin: "20%", once: false }} 
-      transition={{ type: "spring", stiffness: 900, damping: 10 }}
+      transition={{ type: "spring", stiffness: 900, damping: 10, staggerChildren: 0.1 }}
       whileHover={{ scale: 1.025 }}
     >
       <div className="content">

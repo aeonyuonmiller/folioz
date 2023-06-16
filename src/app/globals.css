@@ -179,6 +179,7 @@ a {
   width: fit-content;
   text-align: left;
   color: white;
+  transition: color ease .2s;
 }
 
 .card h2{
@@ -203,6 +204,10 @@ a {
 
 .card:hover{
   cursor: pointer;
+}
+
+.card:hover .content{
+  color: rgb(39, 39, 39);
 }
 
 .card:hover span{
