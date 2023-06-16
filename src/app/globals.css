@@ -157,11 +157,10 @@ a {
 
 .card{
   position: relative;
-  background: whitesmoke;
+  background: rgba(142, 142, 142, 0.3);
   display: flex;
   justify-content: start;
   align-items: end;
-
   border-radius: var(--border-radius);
   padding: 2rem;
   height: 100%;
@@ -169,14 +168,8 @@ a {
   width: 100%;
 }
 
-.card::after {
-  box-shadow:
-  12.5px 12.5px 10px rgba(0, 0, 0, 0.01),
-  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.012),
-  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.014),
-  100px 100px 80px rgba(0, 0, 0, 0.02);
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+.card:hover{
+  background: whitesmoke;
 }
 
 @media screen and (max-width:950px) { }
@@ -185,6 +178,7 @@ a {
   flex-direction: column;
   width: fit-content;
   text-align: left;
+  color: white;
 }
 
 .card h2{
@@ -204,17 +198,11 @@ a {
   width: 10px;
   bottom: 3.2em;
   right: 3.5em;
-  transition: transform ease .4s, box-shadow ease .8s;
+  transition: transform ease .2s;
 }
 
 .card:hover{
   cursor: pointer;
-  transition: all 0.6s ease-in-out;
-}
-
-.card:hover::after{
-  opacity: 1;
-  transition: opacity 0.6s ease-in-out;
 }
 
 .card:hover span{

@@ -18,7 +18,7 @@ export default function Home() {
       <div className="card-grid">
         <Card title="Mind your cookies" date="xx.xx.xxxx" />
         <Card title="my minimalist mac set-up" date="xx.xx.xxxx" />
-        <Card title="My 5 fav books" date="15.06.2023" />
+        <Card title="5 fav books" date="15.06.2023" />
         <Card title="Best albums" date="15.06.2023" />
 
         <Card title="my minimalist mac set-up" date="xx.xx.xxxx" />
