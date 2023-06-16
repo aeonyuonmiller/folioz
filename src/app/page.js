@@ -47,49 +47,49 @@ export default function Home() {
             day="15"
             ordinal="th"
             month="July"
-            year="'23"
+            year="2023"
           />
           <Card
             title="my minimalist mac set-up"
             day="15"
             ordinal="th"
             month="July"
-            year="'23"
+            year="2023"
           />
           <Card
             title="5 fav books"
             day="15"
             ordinal="th"
             month="July"
-            year="'23"
+            year="2023"
           />
           <Card
             title="The best figma plugins"
             day="15"
             ordinal="th"
             month="July"
-            year="'23"
+            year="2023"
           />
           <Card
             title="Best albums"
             day="15"
             ordinal="th"
             month="July"
-            year="'23"
+            year="2023"
           />
           <Card
             title="Mind your cookies"
             day="15"
             ordinal="th"
             month="July"
-            year="'23"
+            year="2023"
           />
           <Card
             title="my minimalist mac set-up"
             day="15"
             ordinal="th"
             month="July"
-            year="'23"
+            year="2023"
           />
         </div>
       </m.div>
