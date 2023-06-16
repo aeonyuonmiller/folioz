@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import Chevron_Right from "../Components/Icons/Chevron_Right"
+import Arrow from "../Components/Icons/Arrow"
 
 const Card = ({title, date}) => {
   return (
@@ -9,14 +9,14 @@ const Card = ({title, date}) => {
       exit={{ opacity:0, scale:0 }} 
       viewport={{  margin: "20%", once: false }} 
       transition={{ type: "spring", stiffness: 400, damping: 10, staggerChildren: 0.1 }}
-      whileHover={{ scale: 1.015, y: -2 }}
+      whileHover={{ scale: 1.015 }}
     >
       <div className="content">
         <p>{date}</p>
         <h2>{title}</h2>
       </div>
       <span>
-        <Chevron_Right color="#ccc" />
+        <Arrow color="#ccc" />
       </span>
     </motion.div>
   )
