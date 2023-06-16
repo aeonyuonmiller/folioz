@@ -212,7 +212,9 @@ a {
   text-transform: lowercase;
   font-style: italic;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  bottom: 4px;
+  letter-spacing: 0.1em;
+  margin-left: -0.05em;
+  /* bottom: 4px; */
 }
 
 /* Arrow-Icon */

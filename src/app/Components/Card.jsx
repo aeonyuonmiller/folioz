@@ -14,7 +14,7 @@ const Card = ({title, day, ordinal, month, year}) => {
       whileHover={{ scale: 1.015 }}
     >
       <div className="content">
-        <p>{day}<span className="accent">{ordinal}</span> of {month} <span className="accent">{year}</span></p>
+        <p>{day}<span className="accent">{ordinal} of</span> {month} {year}</p>
         <h2>{title}</h2>
       </div>
       <span className="arrow">
