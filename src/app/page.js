@@ -49,7 +49,7 @@ export default function Home() {
           <Card title="my minimalist mac set-up" date="15th July '23" />
           <Card title="Mind your cookies" date="15th July '23" />
           <Card title="my minimalist mac set-up" date="15th July '23" />
-          <Card title="My 5 fav books" date="15th July '233" />
+          <Card title="My 5 fav books" date="15th July '23" />
           <Card title="Best albums" date="15th July '23" />
         </div>
       </motion.div>
