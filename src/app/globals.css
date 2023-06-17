@@ -97,6 +97,20 @@ a {
   text-transform: lowercase;
   font-style: italic;
 }
+.contact{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: calc(50% - 150px);
+  bottom: 90px;
+  width: 300px;
+  text-align: center;
+}
+.contact svg{
+  width: 100px;
+  margin-bottom: 28px;
+}
 
 .copyright{
   position: fixed;

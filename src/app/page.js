@@ -3,6 +3,7 @@ import Image from "next/image";
 import { LazyMotion, domAnimation, AnimatePresence } from "framer-motion";
 import { m } from "framer-motion";
 import Logo from "./Components/Logo";
+import Breathe from "./Components/Icons/Breathe";
 import Card from "./Components/Card";
 
 export default function Home() {
@@ -103,6 +104,11 @@ export default function Home() {
               month="July"
               year="2023"
             />
+          </div>
+
+          <div className="contact">
+            <Breathe />
+            Available for work
           </div>
         </m.div>
 
