@@ -100,8 +100,8 @@ a {
 
 .copyright{
   position: fixed;
-  right: 40px;
-  bottom: 20dvh;
+  right: 80px;
+  top: calc(50dvh - 28px);
   color: #acacac;
   font-size: 8px;
   font-weight: 500;
@@ -238,18 +238,20 @@ a {
   color: rgb(39, 39, 39);
 }
 
-
-.portrait{
+.portrait-container{
+  display: flex;
+  justify-content: end;
+  align-items: end;
   position: fixed;
-  bottom:0;
+  bottom: 0;
   right: 0;
   height: 100vh;
   width: 100%;
-  background-image: url(../../public/selfportrait.png);
-  background-repeat: no-repeat;
-  /* background-position: top right; */
-  background-position-x: right;
-  object-fit: contain;
+}
+
+.portrait{
+  height: 100vh;
+  width: fit-content;
 }
 
 @media (prefers-color-scheme: dark) {
