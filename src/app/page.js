@@ -1,6 +1,5 @@
-// import Image from 'next/image'
 "use client";
-
+import Image from "next/image";
 import { LazyMotion, domAnimation, AnimatePresence } from "framer-motion";
 import { m } from "framer-motion";
 import Logo from "./Components/Logo";
@@ -11,11 +10,23 @@ export default function Home() {
     <AnimatePresence mode="wait">
       <LazyMotion features={domAnimation}>
         <m.div
-          className="portrait"
+          className="portrait-container"
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.4, ease: [0.3, 0, 0.2, 1.01] }}
-        />
+        >
+          <Image
+            className="portrait"
+            src="/selfportrait.png"
+            alt="Selfportrait of Aeon Yuon Miller"
+            width={720}
+            height={1024}
+            loading="lazy"
+            quality={100}
+            style={{ objectFit: "contain" }}
+            // priority
+          />
+        </m.div>
 
         <m.div
           className="title"
@@ -97,14 +108,6 @@ export default function Home() {
 
         <div className="logo">
           <Logo color="#C4C4C4" />
-          {/* <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        /> */}
         </div>
       </LazyMotion>
     </AnimatePresence>
