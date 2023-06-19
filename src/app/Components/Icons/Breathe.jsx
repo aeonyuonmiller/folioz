@@ -4,8 +4,8 @@ function Icon() {
 
   return (
     <m.svg
-      animate={{ y: [0, -30, 0] }}
-      transition={{ease: [1,0,.5,1], duration: 5.9, repeat: Infinity, repeatDelay: .1 }}
+      animate={{ y: [0, -30, 0], rotate: [0, 180, 180, 0, 0] }}
+      transition={{ease: [1,0,.5,1], duration: 5.9, repeat: Infinity, repeatDelay: 2.1 }}
       xmlns="http://www.w3.org/2000/svg"
       width="100%"
       fill="none"
@@ -13,24 +13,28 @@ function Icon() {
     >
       <path
         stroke="#C4C4C4"
+        strokeWidth={.5}
         d="M64.5 21.218c0 5.572-3.496 10.685-9.29 14.43-5.79 3.74-13.817 6.07-22.71 6.07s-16.92-2.33-22.71-6.07C3.996 31.902.5 26.79.5 21.217c0-5.573 3.496-10.685 9.29-14.43C15.58 3.048 23.607.718 32.5.718s16.92 2.33 22.71 6.07c5.794 3.745 9.29 8.857 9.29 14.43z"
       ></path>
       <m.path
         animate={{ y: [0, -8, 0] }}
-        transition={{ease: [.56,0,.44,1], duration: 5, delay: .05, repeat: Infinity, repeatDelay: 1}}
+        transition={{ease: [.5,0,.44,1], duration: 5, delay: .05, repeat: Infinity, repeatDelay: 2}}
         stroke="#C4C4C4"
+        strokeWidth={.5}
         d="M58 25c0 4.534-2.775 8.701-7.391 11.758-4.613 3.054-11.014 4.96-18.109 4.96-7.095 0-13.496-1.906-18.109-4.96C9.775 33.7 7 29.534 7 25c0-4.534 2.775-8.701 7.391-11.758 4.613-3.054 11.014-4.96 18.109-4.96 7.095 0 13.496 1.906 18.109 4.96C55.225 16.3 58 20.466 58 25z"
       ></m.path>
       <m.path
         animate={{ y: [0, -18, 0] }}
-        transition={{ease: [.5,0,.44,1], duration: 5, repeat: Infinity, repeatDelay: 1}}
+        transition={{ease: [.5,0,.44,1], duration: 5, repeat: Infinity, repeatDelay: 2}}
         stroke="#C4C4C4"
+        strokeWidth={.5}
         d="M50.547 29.936c0 3.17-1.94 6.104-5.208 8.267-3.264 2.162-7.801 3.515-12.839 3.515-5.037 0-9.575-1.353-12.838-3.515-3.268-2.163-5.209-5.097-5.209-8.268 0-3.17 1.941-6.104 5.209-8.267 3.263-2.162 7.8-3.515 12.838-3.515 5.038 0 9.575 1.353 12.839 3.515 3.267 2.163 5.208 5.097 5.208 8.268z"
       ></m.path>
       <m.path
         animate={{ y: [0, -28, 0] }}
-        transition={{ease: [.56,0,.44,1], duration: 5, repeat: Infinity, repeatDelay: 1}}
+        transition={{ease: [.5,0,.44,1], duration: 5, repeat: Infinity, repeatDelay: 2}}
         stroke="#C4C4C4"
+        strokeWidth={.5}
         d="M42.797 35.068c0 1.754-1.074 3.404-2.938 4.639-1.862 1.232-4.462 2.01-7.359 2.01-2.897 0-5.497-.778-7.358-2.01-1.865-1.235-2.939-2.886-2.939-4.64 0-1.753 1.074-3.403 2.939-4.638 1.86-1.232 4.46-2.011 7.358-2.011 2.897 0 5.497.779 7.358 2.011 1.865 1.235 2.939 2.885 2.939 4.639z"
       ></m.path>
     </m.svg>
