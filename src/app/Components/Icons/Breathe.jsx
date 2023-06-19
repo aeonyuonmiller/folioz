@@ -4,8 +4,8 @@ function Icon() {
 
   return (
     <m.svg
-      animate={{ y: [0, -15, 0] }}
-      transition={{ease: [.56,0,.44,1], duration: 6, repeat: Infinity }}
+      animate={{ y: [0, -30, 0] }}
+      transition={{ease: [1,0,.5,1], duration: 5.9, repeat: Infinity, repeatDelay: .1 }}
       xmlns="http://www.w3.org/2000/svg"
       width="100%"
       fill="none"
