@@ -72,6 +72,8 @@ a {
   text-decoration: none;
 }
 
+h1{ font-size: 36vmin; line-height: 80%; }
+
 .logo{
   position: fixed;
   left: 10%;

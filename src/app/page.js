@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { LazyMotion, domAnimation, AnimatePresence } from "framer-motion";
 import { m } from "framer-motion";
 import Logo from "./Components/Logo";
@@ -51,17 +52,20 @@ export default function Home() {
           className="glas"
           initial={{ y: "10vh", opacity: 0 }}
           animate={{ y: "0vh", opacity: 1 }}
+          exit={{ y: "100%" }}
           transition={{ duration: 0.4, ease: [0.3, 0, 0.2, 1.01], delay: 1 }}
         >
           <h5>View works</h5>
           <div className="card-grid">
-            <Card
-              title="Mind your cookies"
-              day="15"
-              ordinal="th"
-              month="July"
-              year="2023"
-            />
+            <Link href="article">
+              <Card
+                title="Mind your cookies"
+                day="15"
+                ordinal="th"
+                month="July"
+                year="2023"
+              />
+            </Link>
             <Card
               title="my minimalist mac set-up"
               day="15"

@@ -4,7 +4,9 @@ function Icon() {
 
   return (
     <m.svg
-      animate={{ y: [0, -30, 0], rotate: [0, 180, 180, 0, 0] }}
+      animate={{
+        y: [0, -30, 0], rotate: [0, 180, 180, 0, 0]
+      }}
       transition={{ease: [1,0,.5,1], duration: 5.9, repeat: Infinity, repeatDelay: 2.1 }}
       xmlns="http://www.w3.org/2000/svg"
       width="100%"

@@ -2,7 +2,7 @@ import { LazyMotion, domAnimation } from "framer-motion";
 import { m } from "framer-motion"
 import Arrow from "../Components/Icons/Arrow"
 
-const Card = ({title, day, ordinal, month, year}) => {
+const Card = ({title, day, ordinal, month, year, link}) => {
   return (
     <LazyMotion features={domAnimation}>
     <m.div className='card'
