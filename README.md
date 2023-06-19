@@ -6,7 +6,7 @@ This is the showcase of my work and opinions.
 
 ## ToDo
 
-- [x] Recreated index-page design
+- [x] Coded index-page
 - [ ] Scroll animations on index
 - [ ] Link not messing up styling of Card-component
 - [ ] Add page transition
