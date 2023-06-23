@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import { LazyMotion, domAnimation, AnimatePresence } from "framer-motion";
 import { m } from "framer-motion";
 import Logo from "./Components/Logo";
@@ -57,16 +56,14 @@ export default function Home() {
         >
           <h5>View works</h5>
           <div className="card-grid">
-            <Link href="article">
-              <Card
-                link="article"
-                title="Mind your cookies"
-                day="15"
-                ordinal="th"
-                month="July"
-                year="2023"
-              />
-            </Link>
+            <Card
+              link="article"
+              title="Mind your cookies"
+              day="15"
+              ordinal="th"
+              month="July"
+              year="2023"
+            />
             <Card
               link="xxx"
               title="my minimalist mac set-up"

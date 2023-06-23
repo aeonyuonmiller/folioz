@@ -176,6 +176,7 @@ h1{ font-size: 30vmin; line-height: 80%; text-align: right; }
   }
 }
 
+/* first styled the .card itself which caused styling errors – now it grabs the children from the container */
 .card-grid :first-child{
   grid-row: span 2;
 }
