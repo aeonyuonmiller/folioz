@@ -59,6 +59,7 @@ export default function Home() {
           <div className="card-grid">
             <Link href="article">
               <Card
+                link="article"
                 title="Mind your cookies"
                 day="15"
                 ordinal="th"
@@ -67,6 +68,7 @@ export default function Home() {
               />
             </Link>
             <Card
+              link="xxx"
               title="my minimalist mac set-up"
               day="15"
               ordinal="th"
@@ -74,6 +76,7 @@ export default function Home() {
               year="2023"
             />
             <Card
+              link="xxx"
               title="5 fav books"
               day="15"
               ordinal="th"
@@ -81,6 +84,7 @@ export default function Home() {
               year="2023"
             />
             <Card
+              link="xxx"
               title="The best figma plugins"
               day="15"
               ordinal="th"
@@ -88,6 +92,7 @@ export default function Home() {
               year="2023"
             />
             <Card
+              link="xxx"
               title="Best albums"
               day="15"
               ordinal="th"
@@ -95,6 +100,7 @@ export default function Home() {
               year="2023"
             />
             <Card
+              link="xxx"
               title="Mind your cookies"
               day="15"
               ordinal="th"
@@ -102,6 +108,7 @@ export default function Home() {
               year="2023"
             />
             <Card
+              link="xxx"
               title="my minimalist mac set-up"
               day="15"
               ordinal="th"

@@ -70,9 +70,11 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  width: 100%;
+  height: 100%;
 }
 
-h1{ font-size: 36vmin; line-height: 80%; }
+h1{ font-size: 30vmin; line-height: 80%; text-align: right; }
 
 .logo{
   position: fixed;
@@ -174,15 +176,15 @@ h1{ font-size: 36vmin; line-height: 80%; }
   }
 }
 
-.card:first-child{
+.card-grid :first-child{
   grid-row: span 2;
 }
 
-.card:nth-of-type(4n){
+.card-grid :nth-child(4n){
   grid-column: span 2;
 }
 
-.card:nth-of-type(4n) h2{
+.card-grid :nth-child(4n) h2{
   max-width: 60ch;
 }
 

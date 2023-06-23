@@ -1,10 +1,8 @@
 "use client";
-import Image from "next/image";
+// import Image from "next/image";
 import { LazyMotion, domAnimation, AnimatePresence } from "framer-motion";
 import { m } from "framer-motion";
 import Logo from "../Components/Logo";
-import Breathe from "../Components/Icons/Breathe";
-import Card from "../Components/Card";
 
 export default function Home() {
   return (
