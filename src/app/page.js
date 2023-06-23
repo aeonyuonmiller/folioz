@@ -22,10 +22,10 @@ export default function Home() {
             alt="Selfportrait of Aeon Yuon Miller"
             width={720}
             height={1024}
-            loading="lazy"
-            quality={100}
+            // loading="lazy"
+            quality={90}
             style={{ objectFit: "contain" }}
-            // priority
+            priority
           />
         </m.div>
 
