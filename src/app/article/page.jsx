@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <AnimatePresence mode="wait">
       <LazyMotion features={domAnimation}>
-        <h1>Mind your cookies</h1>
+        <h1>Mind your cookies.</h1>
 
         <m.div
           className="title"
