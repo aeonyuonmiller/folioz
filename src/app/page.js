@@ -158,7 +158,7 @@ export default function Home() {
 
             <div className="contact">
               <Breathe />
-              Available for work
+              Working for Ballhaus West
             </div>
           </m.div>
 
