@@ -29,6 +29,7 @@ export default function Home() {
             transition={{ duration: 2.4, easings: "ease" }}
             style={{
               y: parallax,
+              perspective: 500,
               transition: {
                 easings: "ease",
                 duration: 2,
