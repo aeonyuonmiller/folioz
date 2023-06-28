@@ -1,12 +1,16 @@
 "use client";
 import Image from "next/image";
 import { LazyMotion, domAnimation, AnimatePresence } from "framer-motion";
-import { m } from "framer-motion";
+import { m, useScroll, useTransform } from "framer-motion";
 import Logo from "./Components/Logo";
 import Breathe from "./Components/Icons/Breathe";
 import Card from "./Components/Card";
 
 export default function Home() {
+  const { scrollYProgress } = useScroll();
+  const parallax = useTransform(scrollYProgress, [0, 1], [0, 200]);
+  const fadeOut = useTransform(scrollYProgress, [0, 0.3], [1, 0]);
+
   return (
     <AnimatePresence mode="wait">
       <LazyMotion features={domAnimation}>
@@ -14,7 +18,11 @@ export default function Home() {
           className="portrait-container"
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.4, ease: [0.3, 0, 0.2, 1.01] }}
+          transition={{ duration: 0.4, easings: "easeOut" }}
+          style={{
+            y: parallax,
+            transition: { ease: [0.3, 0, 0.2, 1.01], duration: 1, delay: 0.1 },
+          }}
         >
           <Image
             className="portrait"
@@ -34,6 +42,10 @@ export default function Home() {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.4, ease: [0.3, 0, 0.2, 1.01], delay: 0.1 }}
+          style={{
+            opacity: fadeOut,
+            transition: { duration: 0.4 },
+          }}
         >
           Portfolio <span>of</span> Aeon Yuon Miller
         </m.div>
@@ -43,6 +55,10 @@ export default function Home() {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.4, ease: [0.3, 0, 0.2, 1.01], delay: 0.4 }}
+          style={{
+            opacity: fadeOut,
+            transition: { duration: 0.4 },
+          }}
         >
           &copy;{new Date().getFullYear()}
         </m.div>
