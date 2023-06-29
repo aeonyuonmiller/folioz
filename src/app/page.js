@@ -24,7 +24,7 @@ export default function Home() {
         <LazyMotion features={domAnimation}>
           <m.div
             className="portrait-container"
-            initial={{ y: 50, opacity: 0 }}
+            initial={{ y: 10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 2.4, easings: "ease" }}
             style={{
