@@ -6,8 +6,9 @@ function Logo({color}) {
   return (
   <Link href="/">
     <m.svg
-    initial={{opacity:0}}
-    animate={{opacity:1}}
+      layoutId="logo"
+      initial={{opacity:0}}
+      animate={{opacity:1}}
       xmlns="http://www.w3.org/2000/svg"
       width="100%"
       fill="none"
