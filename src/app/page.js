@@ -20,13 +20,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <AnimatePresence mode="wait">
         <LazyMotion features={domAnimation}>
           <m.div
             className="portrait-container"
             initial={{ y: 10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 2.4, easings: "ease" }}
+            transition={{ duration: 3, easings: "ease", delay: 0.5 }}
             style={{
               y: parallax,
               perspective: 500,
@@ -43,7 +44,7 @@ export default function Home() {
               width={720}
               height={1024}
               loading="lazy"
-              quality={80}
+              quality={100}
               style={{ objectFit: "contain" }}
               // priority
             />
