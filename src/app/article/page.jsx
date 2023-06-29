@@ -11,7 +11,7 @@ export default function Home() {
         <m.h1 initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}>Mind your cookies.</m.h1>
 
         <div className="logo">
-          <Logo color="#C4C4C4" />
+          <Logo color="#40f75e" />
         </div>
       </LazyMotion>
     </AnimatePresence>
