@@ -8,6 +8,6 @@ This is the showcase of my work and opinions.
 
 - [x] Coded index-page
 - [x] Scroll animations on index
-- [ ] Link not messing up styling of Card-component
+- [x] Link not messing up styling of Card-component
 - [ ] Add page transition
 - [ ] Style article page
